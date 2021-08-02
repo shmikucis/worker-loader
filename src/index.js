@@ -40,6 +40,7 @@ export function pitch(request) {
   this.cacheable(false);
 
   const options = getOptions(this);
+  options.inline = "no-fallback";
 
   validate(schema, options, {
     name: "Worker Loader",
